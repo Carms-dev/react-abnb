@@ -7,7 +7,12 @@ class PlaceList extends React.Component {
         const { places } = this.props;
         return (
             <div className="place-list">
-                {places.map((place) => <Place place={place} key={place.imageUrl} />)}
+                {places.map((place, index) => <Place 
+                    selectPlace={this.props.selectPlace}
+                    selectedPlace={this.props.selectedPlace}
+                    place={place} 
+                    index={index}
+                    key={place.imageUrl} />)}
             </div>
         )
     };
