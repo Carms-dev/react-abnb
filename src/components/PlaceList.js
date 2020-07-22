@@ -4,10 +4,9 @@ import Place from './Place';
 
 class PlaceList extends React.Component {
     render() {
-
         const { places } = this.props;
         return (
-            <div>
+            <div className="place-list">
                 {places.map((place) => <Place place={place} key={place.imageUrl} />)}
             </div>
         )

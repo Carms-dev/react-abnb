@@ -7,14 +7,15 @@ import samplePlaces from '../sample-places';
 
 class App extends React.Component {
   state = {
-    places: samplePlaces
+    places: samplePlaces,
+    selectedPlace: null
   }
 
   render() {
     return (
       <div className="app">
-        <PlaceList className="place_list" places={this.state.places}/>
-        <Map className="map" />
+        <PlaceList places={this.state.places}/>
+        <Map/>
       </div>
     );
   }

@@ -20,7 +20,7 @@ body {
   top: 0 !important;
 }
 
-.flat-list {
+.place-list {
   padding-left: 10px;
   width: 60%;
   display: flex;
@@ -28,7 +28,7 @@ body {
   justify-content: flex-start;
 }
 
-.flat-list .card {
+.place-list .card {
   width: calc(50% - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
@@ -54,13 +54,13 @@ body {
 .card.active {
   border: 10px solid red;
 }
-.card-user {
+/* .card-user {
   position: absolute;
   right: 10px;
   top: 10px;
   width: 40px;
   border-radius: 50%;
-}
+} */
 .card-price {
   position: absolute;
   top: 10px;
@@ -76,15 +76,15 @@ body {
   bottom: 10px;
   left: 10px;
 }
-.card-description h2 {
+/* .card-description h2 {
   font-size: 20px;
 }
 .card-description p {
   font-size: 14px;
   opacity: 0.7;
   font-weight: lighter;
-}
-.card-link {
+} */
+/* .card-link {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -96,4 +96,4 @@ body {
 }
 .card-link:hover {
   opacity: 0.1;
-}
+} */

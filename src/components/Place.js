@@ -2,9 +2,11 @@ import React from 'react';
 
 class place extends React.Component {
     render() {
+        const { name, imageUrl, price, priceCurrency } = this.props.place;
         return (
-            <div className="place">
-                {this.props.place.name}
+            <div className="card" style={{ backgroundImage: `url(${imageUrl})`}}>
+                <div className="card-price">{price} {priceCurrency}</div>
+                <div className="card-description">{name}</div>
             </div>
         )
     };
