@@ -7,7 +7,9 @@ class place extends React.Component {
     }
     render() {
         const { name, imageUrl, price, priceCurrency } = this.props.place;
-        const isSelected = this.props.selectedPlace.imageUrl === imageUrl;
+        const isSelected =
+          this.props.selectedPlace &&
+          this.props.selectedPlace.imageUrl === imageUrl;
 
         return (
             <div 
